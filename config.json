@@ -13,9 +13,9 @@
     ],
     "version": "2.22",
     "sharedTheme": {
-      "isPortalSupport": false,
+      "isPortalSupport": true,
       "useHeader": false,
-      "useLogo": false
+      "useLogo": true
     }
   },
   "portalUrl": "https://geocatmin.ingemmet.gob.pe/portal",
