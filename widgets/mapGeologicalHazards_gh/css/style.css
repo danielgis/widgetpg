@@ -1,0 +1,153 @@
+.map-geological-hazards-gh h3 {
+  font-size: 1.2em;
+}
+.map-geological-hazards-gh h3, p {
+  margin-top: 0;
+}
+/* add additional custom styles */
+
+/* #containerHeaderGhId {
+  text-align: justify;
+} */
+
+#containerGraphButtonsGhId{
+  width: 105px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.btnGraphGhCls{
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  
+}
+
+#btnPolygonGraphGhId{
+  background: url('../images/polygon.png') no-repeat 50% 50%;
+  background-color: #d1d1d1;
+}
+
+#btnUploadGraphGhId{
+  justify-content: center;
+  background-color: #d1d1d1;
+}
+
+#imageUploadGraphGhId {
+  margin: 25%;
+  cursor: pointer;
+  content: url('../images/upload.png');
+}
+
+#btnRemoveGraphGhId{
+  background: url('../images/delete.png') no-repeat 50% 50%;
+  background-color: #e95453;; 
+}
+
+.containerTypeMapGhCls{
+  margin: 5px 0;
+}
+
+#containerParamsOptionalGhId{
+  margin-top: 20px;
+}
+
+.itTitleMapGhCls{
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#btnRunProcessGhId{
+  margin-top: 20px;
+  float: right;
+  cursor: pointer;
+}
+
+#containerProgressBarGhId #loadingAnimationGhId {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#loadingAnimationGhId {
+  height: 4px;
+  background-color: #ddd;
+  width: 100%;
+  overflow: hidden;
+}
+
+.loaderElementGhCls{
+  width: 100%;
+  height: 100%;
+  background-color: #74ee15;;
+  animation: indeterminateAnimation 1s infinite linear;
+  transform-origin: 0% 50%;
+}
+
+@keyframes indeterminateAnimation {
+  0% {
+    transform:  translateX(0) scaleX(0);
+  }
+  40% {
+    transform:  translateX(0) scaleX(0.4);
+  }
+  100% {
+    transform:  translateX(100%) scaleX(0.5);
+  }
+}
+
+/* :root {
+  --main-color: #111;
+  --loader-color: #74ee15;
+  --back-color: #eee;
+  --time: 1s;
+  --size: 3px;
+}
+
+#containerProgressBarGhId #loadingAnimationGhId .loaderElementGhCls {
+  height: var(--size);
+  width: 100%;
+  background: var(--back-color);
+}
+
+.loaderElementGhCls:before {
+  content: '';
+  display: block;
+  background-color: var(--loader-color);
+  height: var(--size);
+  width: 0;
+  animation: getWidth var(--time) ease-in infinite;
+}
+
+
+@keyframes getWidth {
+    100% {
+        width: 100%;
+    }
+} */
+
+
+.containerProgressBarGhCls, .containerErrorGhCls{
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
+#containerBtnRunProcessGhId{
+  text-align: right;
+}
+
+
+.btnCancelProcessGhCls{
+  margin-top: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  /* display: none; */
+}

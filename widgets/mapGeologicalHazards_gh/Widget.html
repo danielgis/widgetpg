@@ -1,0 +1,72 @@
+<div>
+
+  <!-- <h3>${nls.widgetTitle}</h3>
+  <p>${nls.description}</p>
+
+  <p>Service URL: ${config.serviceUrl}</p> -->
+  <div id="mainContainerGhId" class="mainContainerGhCls">
+    <div id="containerHeaderGhId">
+      <p>
+        Permite la exportacion del mapa de Susceptibilidad por movimientos en masa o Susceptibilidad por Inundación y Erosión
+      </p>
+      <a href="#">Ver manual</a>
+    </div>
+    <hr style="margin: 15px 0">
+    <div>
+      <p>Dibuje una forma o agregue un área de consulta (.zip):*</p>
+      <div id="containerGraphButtonsGhId">
+        <button id="btnPolygonGraphGhId" value="freehand_polygon" class="btnPolygonGraphGhCls btnGraphGhCls"></button>
+          <label for="inputUploadZipGhId" id="btnUploadGraphGhId" class="btnGraphGhCls">
+          <form enctype="multipart/form-data" method="post" id="uploadFormGhId">
+            <input type="file" name="file" id="inputUploadZipGhId" multiple="false" class="file-input inputUploadZipGhCls" accept=".zip,.rar" hidden/>
+          </form>
+          <img id="imageUploadGraphGhId">
+        </label>
+
+        <button id="btnRemoveGraphGhId" class="btnRemoveGraphGhCls btnGraphGhCls"></button>
+      </div>
+    </div>
+    <div id="containerTypeMapGhId">
+      <p>Seleccione mapa a exportar:*</p>
+      <div class="containerTypeMapGhCls">
+        <input type="radio" id="rbtnSmmGhId" class="rbtnGhCls" value="1" name="typemap">
+        <label for="rbtnSmmGhId">Susceptibilidad por Movimientos en masa</label>
+      </div>
+      <div class="containerTypeMapGhCls">
+        <input type="radio" id="rbtnSiefGhId" class="rbtnGhCls" value="2" name="typemap">
+        <label for="rbtnSiefGhId">Susceptibilidad por Inundación y Erosión</label>
+      </div>
+    </div>
+    <div id="containerParamsOptionalGhId">
+      <label>Solicitante:*</label>
+      <select id="" class="selectStakeholderGhCls itTitleMapGhCls" name="" id="" data-dojo-attach-point="selectStakeholderGhAp">
+        <option value="1">Gobierno Nacional</option>   
+        <option value="2">Entidades Gestoras de Riesgo</option>   
+        <option value="3">Gobierno Regional</option>   
+        <option value="4">Gobierno Local</option>   
+        <option value="5">Entidades de investigación</option>   
+        <option value="6">Entidades Sectoriales</option>   
+        <option value="7">Entidades privadas</option>   
+        <option value="8">Sociedad Civil</option>   
+        <option value="9">Persona natural</option>   
+      </select>
+      <label>Agregar un titulo de mapa (opcional):</label>
+      <input type="text" id="itTitleMapGhId" class="itTitleMapGhCls" data-dojo-attach-point="itTitleMapGhAp">
+      <label>Número de mapa (opcional):</label>
+      <input type="number" id="itNumberMapGhId" class="itTitleMapGhCls" value="1">
+    </div>
+    <div id="containerProgressBarGhId" class="containerProgressBarGhCls" data-dojo-attach-point="containerProgressBarGhAp">
+      <div id="loadingAnimationGhId">
+        <div class="loaderElementGhCls"></div>
+      </div>
+      <div id="containerMessagesProgressGhId" data-dojo-attach-point="containerMessagesProgressGhAp">
+      </div>
+    </div>
+    <div id="containerErrorGhId" class="containerErrorGhCls" data-dojo-attach-point="containerErrorGhAp">
+    </div>
+    <div id="containerBtnRunProcessGhId">
+      <button id="btnCancelProcessGhId" class="btnCancelProcessGhCls">Cancelar</button>
+      <button id="btnRunProcessGhId" class="btnRunProcessGhCls">Procesar</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+{
+  "serviceUrl": "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer",
+  "uploadServiceUrl": "https://geocatmin.ingemmet.gob.pe/arcgis/rest/services/GEOPROCESO/mapaPeligrosGeologicos/GPServer/uploads/upload",
+  "mapaPeligrosGeologicosGPService": "https://geocatmin.ingemmet.gob.pe/arcgis/rest/services/GEOPROCESO/mapaPeligrosGeologicos/GPServer/generarmapasdepeligrosgeologicos"
+}
