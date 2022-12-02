@@ -312,14 +312,9 @@
   "isWebTier": false,
   "httpProxy": {
     "useProxy": true,
-    "url": "https://geocatmin.ingemmet.gob.pe/DotNet/proxy.ashx",
     "alwaysUseProxy": false,
-    "rules": [
-      {
-        "urlPrefix": "geocatmin.ingemmet.gob.pe/arcgis/rest/services/pruebas/serv_osi_geoquimica_ml/mapserver/0/",
-        "proxyUrl": "https://geocatmin.ingemmet.gob.pe/DotNet/proxy.ashx"
-      }
-    ]
+    "url": "",
+    "rules": []
   },
   "dataSource": {
     "dataSources": {},
