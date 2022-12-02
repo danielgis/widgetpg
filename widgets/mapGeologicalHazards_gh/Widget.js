@@ -308,7 +308,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'dijit/_WidgetsInTemplateMixin'
 
       var panel = this.getPanel();
       // panel.position.width = 600; 
-      panel.position.height = 650;
+      panel.position.height = 700;
       panel.setPosition(panel.position);
       panel.panelManager.normalizePanel(panel);
       // dom.byId("rbtnSmmGhId").checked = true;
